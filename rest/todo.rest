@@ -1,13 +1,13 @@
-GET https://localhost:3000/todo 
+GET http://localhost:3000/todo
 
 ###
 POST http://localhost:3000/todo HTTP/1.1
 Content-Type: application/json
 
 {
-  "title": "Read",
+  "title": "buy a new",
   "description": "read the book"
-},
+}
 
 ###
 PUT http://localhost:3000/todo HTTP/1.1
@@ -19,4 +19,4 @@ Content-Type: application/json
 },
 
 ###
-DELETE http://localhost:3000/todo/ HTTP/1.1
+DELETE http://localhost:3000/todo/637a5cc30b5ffc639a3e8b68 HTTP/1.1

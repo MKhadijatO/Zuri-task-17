@@ -1,10 +1,10 @@
 const { Schema, model } = require("mongoose");
 
 const todoSchema = new Schema({
-  title: "",
-  description: "", 
+  title: String,
+  description: String, 
 },
-{timestamp: true,}
+{timestamps: true}
 );
 
 const todoModel = model ( "todos", todoSchema);
